@@ -1,0 +1,20 @@
+{
+  "short_name": "lunacles.dev",
+  "name": "",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "damocles.gif",
+      "type": "image/png",
+      "sizes": "200x200"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#a6a1dc",
+  "background_color": "#282c34"
+}
