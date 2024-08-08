@@ -1,12 +1,19 @@
 import React from 'react'
 import Header from './components/header'
+import { Theme } from './styles/theme'
+import styled from 'styled-components'
 
-function App() {
-  return (
-    <div className="App">
+const StyledApp = styled.div`
+  background: ${Theme.Background};
+`
+
+const App = () => {
+  return (<>
+    <StyledApp className='App' >
       <Header/>
-    </div>
-  )
+    </StyledApp>
+    <h1>this is still a wip lol</h1>
+  </>)
 }
 
 export default App
