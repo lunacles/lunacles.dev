@@ -7,13 +7,11 @@ const GlobalStyle = createGlobalStyle`
 `
 
 const TitleWrapper = styled.div<Props>`
-  font-size: 5vmin;
-  transform: translate(1.25em, -0.1em);
+  font-size: 3.5vmin;
+  transform: translate(1.25em, 0em);
   height: 2em;
-  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
   mix-blend-mode: screen;
 
   span {
@@ -67,19 +65,17 @@ const NameTitle: React.FC<{
   color2: string
   weight: string
 }> = ({ text1, text2, color1, color2, weight }) => {
-  return (
-    <>
-      <GlobalStyle />
-      <TitleWrapper
-        color1={color1}
-        color2={color2}
-        fontWeight={weight}
-      >
-        <span data-text={text1}></span>
-        <span className="invert" data-text={text2}></span>
-      </TitleWrapper>
-    </>
-  )
+  return (<>
+    <GlobalStyle/>
+    <TitleWrapper
+      color1={color1}
+      color2={color2}
+      fontWeight={weight}
+    >
+      <span data-text={text1}></span>
+      <span className='invert' data-text={text2}></span>
+    </TitleWrapper>
+  </>)
 }
 
 export default NameTitle
